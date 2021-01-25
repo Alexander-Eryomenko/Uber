@@ -1,0 +1,281 @@
+@media (max-width: 1200px) {
+.menu {
+  &_item {
+    padding-right: 20px;
+  }
+  &_link {
+    font-size: 13px;
+    }
+  }
+  .promo {
+    &_header {
+      font-size: 50px;
+    }
+  }
+  .reasons {
+    &_block {
+      align-items: flex-start;
+    }
+    &_descr {
+      width: 300px;
+    }
+  }
+  .mobile {
+    &_item {
+      width: 300px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .label {
+    width: 18%;
+  }
+  .menu {
+    &_item {
+      padding-right: 9px;
+    }
+    &_link {
+      font-size: 10px;
+      }
+    }
+    .subheader {
+      &_logo {
+        img {
+          width: 100%;
+        }
+      }
+      &_official {
+        font-size: 11px;
+      }
+      &_phone {
+        font-size: 20px;
+      }
+      &_btn {
+        width: 100%;
+        height: 40px;
+        margin-top: 4px;
+      }
+    }
+    .mobile {
+      &_item {
+        width: 235px;
+      }
+    }
+    .promo {
+      &_header {
+        font-size: 40px;
+      }
+      &_subheader {
+        font-size: 30px;
+      }
+    }
+    .reasons {
+      &_block {
+        flex-direction: column;
+        align-items: center;
+      }
+      &_round {
+        margin-bottom: 15px;
+      }
+      &_descr {
+        width: 300px;
+      }
+    }
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 2px;
+      transition: 0.5s all;
+      &:last-child {
+        margin-bottom: none;
+      }
+    }
+    &_active {
+      span {
+        margin-bottom: -2px;
+        &:first-child {
+          transform: translateY(3px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+    
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader {
+
+    &_phone {
+      display: block;
+      
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    &_btn {
+      display: block;
+      width: 150px;
+      height: 40px;
+      margin: 0 auto;
+    }
+    &_logo {
+      
+    }
+  }
+
+
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0,0,0, .8);
+    transition: 0.6s;
+    &_active {
+      left: 0;
+    }
+  
+  &_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  &_link {
+    font-size: 20px;
+  }
+}
+.promo {
+  &_header {
+    margin-top: 40px;
+    
+    line-height: 45px;
+  }
+}
+.choice {
+
+}
+.label {
+  width: 20%;
+}
+}
+
+@media (max-width: 575px) {
+  .label {
+    margin-bottom: 15px;
+  }
+  .title {
+    font-size: 15px;
+    
+  }
+  .subheader {
+    &_official {
+      display: none;
+    }
+    &_logo {
+      margin-top: 10px;
+    }
+    &_phone {
+      font-size: 12px;
+      font-weight: 400;
+
+    }
+    &_btn {
+      width: 110px;
+      height: 22px;
+      font-size: 10px;
+    }
+  }
+  .promo {
+    min-height: 400px;
+    padding: 73px 0 35px 0;
+    &_descr {
+      display: none;
+    }
+    &_header {
+      margin-top: 70px;
+      font-size: 35px;
+      line-height: 40px;
+    }
+    &_subheader {
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
+  .label {
+    width: 40%;
+  }
+  .footer {
+    &_wrapper {
+      flex-direction: column;
+      &_social-icons {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+        order: 1;
+      }
+      &_block {
+        width: 100%;
+        margin-bottom: 20px;
+
+        &_main-text {
+          display: flex;
+          justify-content: center;
+          a {
+            font-size: 10px;
+            margin-right: 30px;
+          }
+        }
+      }
+      &_soical-icons2 {
+        justify-content: center;
+        order: 2;
+        a {
+          margin: 0 6px 0 0;
+        }
+      }
+    }
+  }
+  .menu {
+    width: 85%;
+    &_item {
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+    }
+    &_link {
+      display: block;
+    }
+  }
+  
+}
+
+
